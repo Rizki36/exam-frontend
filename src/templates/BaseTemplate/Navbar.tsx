@@ -13,10 +13,11 @@ const Navbar: FC<{ className: string }> = ({ className }) => {
       <div
         className={`flex relative justify-between items-center py-3 px-5 bg-base-100 ${className}`}
       >
-        <Link href={'/'} passHref>
-          <h1 className={`text-3xl font-bold tracking-wider text-left`}>
-            Booku
-          </h1>
+        <Link
+          href={'/'}
+          className={`text-3xl font-bold tracking-wider text-left text-base-content`}
+        >
+          Booku
         </Link>
 
         <ButtonModal isOpen={isOpen} setIsOpen={setIsOpen} />
