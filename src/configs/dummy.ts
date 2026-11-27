@@ -5,7 +5,7 @@ const dummy = [
     category_id: 1,
     authors: ['Benjamin Graham'],
     cover_url:
-      'https://cdn.sejutacita.id/6138d21e3a09ee0013ee730f/Booku/c55ef13f-eb0e-40de-a04c-e46df5940682.png',
+      'http://localhost:4000/covers/c55ef13f-eb0e-40de-a04c-e46df5940682.png',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,\n       molestiae quas vel sint commodi repudiandae consequuntur vo',
     sections: [
@@ -48,7 +48,7 @@ const dummy = [
     category_id: 1,
     authors: ['Joel Fuhrman'],
     cover_url:
-      'https://cdn.sejutacita.id/60594de91882d200135bd833/Booku/bec21735-9392-4694-9805-1ba929f03f1b.jpeg',
+      'http://localhost:4000/covers/bec21735-9392-4694-9805-1ba929f03f1b.jpeg',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Max',
     sections: [
       {
@@ -86,7 +86,7 @@ const dummy = [
     category_id: 1,
     authors: ['Héctor Garcia', 'Francesc Miralles'],
     cover_url:
-      'https://cdn.sejutacita.id/6138d21e3a09ee0013ee730f/Booku/f64e0881-ec81-4f45-bdb6-3b9a51af788d.png',
+      'http://localhost:4000/covers/f64e0881-ec81-4f45-bdb6-3b9a51af788d.png',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,\n       molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum\n       numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga ',
     sections: [
@@ -119,7 +119,7 @@ const dummy = [
     category_id: 1,
     authors: ['Meik Wiking'],
     cover_url:
-      'https://cdn.sejutacita.id/6138d21e3a09ee0013ee730f/Booku/703096ac-3749-41b0-8637-e37d9e29179e.png',
+      'http://localhost:4000/covers/703096ac-3749-41b0-8637-e37d9e29179e.png',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,\n       molestiae quas vel sint commo',
     sections: [
@@ -168,7 +168,7 @@ const dummy = [
     category_id: 1,
     authors: ['Don Miguel Ruiz'],
     cover_url:
-      'https://cdn.sejutacita.id/6138d21e3a09ee0013ee730f/Booku/2480465a-cc48-437f-a243-ead4722b27b8.jpg',
+      'http://localhost:4000/covers/2480465a-cc48-437f-a243-ead4722b27b8.jpg',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,\n      ',
     sections: [
@@ -217,7 +217,7 @@ const dummy = [
     category_id: 1,
     authors: ['Ingrid Fetell Lee'],
     cover_url:
-      'https://cdn.sejutacita.id/6138d21e3a09ee0013ee730f/Booku/c18af607-274a-41c0-ba5a-b3156337f6c8.jpg',
+      'http://localhost:4000/covers/c18af607-274a-41c0-ba5a-b3156337f6c8.jpg',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,\n       molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum\n       numquam blanditiis harum quisquam eius sed odit fugiat i',
     sections: [
@@ -251,7 +251,7 @@ const dummy = [
     category_id: 1,
     authors: ['Daniel Goleman'],
     cover_url:
-      'https://cdn.sejutacita.id/6138d21e3a09ee0013ee730f/Booku/4c0ca030-95be-413c-9cbe-e181923730a0.jpg',
+      'http://localhost:4000/covers/4c0ca030-95be-413c-9cbe-e181923730a0.jpg',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollit',
     sections: [
@@ -289,7 +289,7 @@ const dummy = [
     category_id: 1,
     authors: ['Keith Ferrazzi'],
     cover_url:
-      'https://cdn.sejutacita.id/6138d21e3a09ee0013ee730f/Booku/6502e561-c3b0-4a57-9bbb-d043330caa19.jpg',
+      'http://localhost:4000/covers/6502e561-c3b0-4a57-9bbb-d043330caa19.jpg',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,\n       molestiae quas vel sint commodi repudia',
     sections: [
@@ -331,7 +331,7 @@ const dummy = [
     category_id: 1,
     authors: ['Kristin Loberg', 'David Perlmutter'],
     cover_url:
-      'https://cdn.sejutacita.id/6138d21e3a09ee0013ee730f/Booku/7a90eb6c-153a-4c27-a854-50991a7dec56.jpg',
+      'http://localhost:4000/covers/7a90eb6c-153a-4c27-a854-50991a7dec56.jpg',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,\n       molestiae quas vel ',
     sections: [
@@ -378,7 +378,7 @@ const dummy = [
     category_id: 1,
     authors: ['Mark Manson'],
     cover_url:
-      'https://cdn.sejutacita.id/6138d21e3a09ee0013ee730f/Booku/46cc81d6-07f1-464b-9e4f-0beac07287cd.jpg',
+      'http://localhost:4000/covers/46cc81d6-07f1-464b-9e4f-0beac07287cd.jpg',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,\n       molestiae quas vel sint commo',
     sections: [

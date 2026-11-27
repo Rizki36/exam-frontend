@@ -55,3 +55,16 @@ Simple app for frontend test
   </tr>
 </table>
 
+
+## Mock server
+
+The real backend (`asia-southeast2-sejutacita-app.cloudfunctions.net`) is going away, so a local mock is bundled in `mock-server/`.
+
+```bash
+yarn mock   # terminal 1: mock backend on http://localhost:4000
+yarn dev    # terminal 2: app on http://localhost:3000
+```
+
+- Serves `GET /fee-assessment-categories`, `GET /fee-assessment-books?categoryId&page&size` (0-based pages, `[]` past the end) and cover images at `/covers/*`.
+- Data and covers are snapshots in `mock-server/data` and `mock-server/assets/covers`. Re-snapshot (only possible while the real backend is still up) with `yarn mock:harvest`.
+- The app reads the backend URL from `NEXT_PUBLIC_API_BASE_URL` (`.env`); point it elsewhere to use a different backend.
