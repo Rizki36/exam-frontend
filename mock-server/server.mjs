@@ -71,7 +71,7 @@ const server = http.createServer(async (req, res) => {
   }
 
   if (url.pathname.startsWith('/covers/')) {
-    const file = path.join(root, 'assets/covers', path.basename(url.pathname));
+    const file = path.join(root, '../public/covers', path.basename(url.pathname));
     try {
       await stat(file);
       res.writeHead(200, {

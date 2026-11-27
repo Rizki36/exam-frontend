@@ -55,7 +55,7 @@ const urls = new Set(books.map((b) => b.cover_url).filter(Boolean));
 for (const m of dummy.matchAll(/https:\/\/cdn\.sejutacita\.id\/[^'"\s]+/g)) {
   urls.add(m[0]);
 }
-await mkdir(path.join(root, 'assets/covers'), { recursive: true });
+await mkdir(path.join(root, '../public/covers'), { recursive: true });
 let ok = 0;
 for (const url of urls) {
   const res = await fetch(url);
@@ -65,7 +65,7 @@ for (const url of urls) {
   }
   const name = path.basename(new URL(url).pathname);
   await writeFile(
-    path.join(root, 'assets/covers', name),
+    path.join(root, '../public/covers', name),
     Buffer.from(await res.arrayBuffer())
   );
   ok += 1;
