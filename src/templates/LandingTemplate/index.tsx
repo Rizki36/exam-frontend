@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { FC } from 'react';
+import { FC, PropsWithChildren } from 'react';
 
 import Navbar from './Navbar';
 
-const LandingTemplate: FC = ({ children }) => {
+const LandingTemplate: FC<PropsWithChildren> = ({ children }) => {
   return (
     <>
       <Navbar className="fixed z-50" />

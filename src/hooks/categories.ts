@@ -5,7 +5,7 @@ import fetcher from '@/configs/fetcher';
 import { GetCategoriesResponse } from '@/types/dto/category';
 
 export function useCategories() {
-  const { data, error } = useSWR([`/categories`], (url) => {
+  const { data, error } = useSWR([`/categories`], ([url]) => {
     return fetcher
       .get<any, AxiosResponse<GetCategoriesResponse>>(url)
       .then((res) => res.data);

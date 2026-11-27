@@ -12,8 +12,8 @@ const ImageItem: FC<{ src: string; className?: string }> = ({
     >
       <Image
         className="rounded-md"
-        layout="fill"
-        objectFit="contain"
+        fill
+        style={{ objectFit: 'contain' }}
         src={src}
         alt="Booku"
       />

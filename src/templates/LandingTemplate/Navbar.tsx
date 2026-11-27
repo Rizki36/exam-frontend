@@ -51,8 +51,8 @@ const Navbar: FC<{ className?: string }> = ({ className }) => {
                 <Image
                   src={'/me.png'}
                   alt="me"
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  style={{ objectFit: 'cover' }}
                 />
               </div>
             </label>

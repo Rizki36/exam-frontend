@@ -19,8 +19,8 @@ const Person: FC<{ className?: string; showImg?: boolean }> = ({
               <Image
                 src={'/me.png'}
                 alt="Avatar Tailwind CSS Component"
-                objectFit="cover"
-                layout="fill"
+                fill
+                style={{ objectFit: 'cover' }}
               />
             </div>
           )}

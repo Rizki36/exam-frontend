@@ -46,7 +46,7 @@ const BooksPage = () => {
 
           <CategoryItem />
 
-          <AnimatePresence exitBeforeEnter>
+          <AnimatePresence mode="wait">
             <motion.div
               key={activeTab}
               animate={{ opacity: 1, y: 0 }}
