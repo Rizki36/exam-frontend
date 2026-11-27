@@ -56,15 +56,14 @@ Simple app for frontend test
 </table>
 
 
-## Mock server
+## Mock backend
 
-The real backend (`asia-southeast2-sejutacita-app.cloudfunctions.net`) is going away, so a local mock is bundled in `mock-server/`.
+The real backend (`asia-southeast2-sejutacita-app.cloudfunctions.net`) is going away, so the app is self-contained: the Next API routes (`/api/categories`, `/api/books`) serve snapshot data from `mock-server/data`, and cover images are static files in `public/covers`. No extra server is needed, and it works on Vercel.
 
 ```bash
-yarn mock   # terminal 1: mock backend on http://localhost:4000
-yarn dev    # terminal 2: app on http://localhost:3000
+yarn dev    # app + API on http://localhost:3000
 ```
 
-- Serves `GET /fee-assessment-categories`, `GET /fee-assessment-books?categoryId&page&size` (0-based pages, `[]` past the end) and cover images at `/covers/*`.
-- Data and covers are snapshots in `mock-server/data` and `mock-server/assets/covers`. Re-snapshot (only possible while the real backend is still up) with `yarn mock:harvest`.
-- The app reads the backend URL from `NEXT_PUBLIC_API_BASE_URL` (`.env`); point it elsewhere to use a different backend.
+- `GET /api/categories`, `GET /api/books?categoryId&page&size` (0-based pages, `[]` past the end).
+- Re-snapshot the data and covers (only possible while the real backend is still up) with `yarn mock:harvest`.
+- `yarn mock` still starts a standalone copy of the backend on http://localhost:4000 for use with other clients.

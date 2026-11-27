@@ -1,17 +1,19 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-import env from '@/configs/env';
-import fetcher from '@/configs/fetcher';
+import { getBooks } from '@/utils/mockData';
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  const data = await fetcher
-    .get(`${env.API_BASE_URL}/fee-assessment-books`, {
-      params: req.query,
-    })
-    .then((_res) => _res.data);
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
+  const { categoryId } = req.query;
+  const page = Math.max(Number(req.query.page) || 0, 0);
+  const size = Math.max(Number(req.query.size) || 10, 1);
 
-  res.status(200).json(data);
+  res
+    .status(200)
+    .json(
+      getBooks(
+        typeof categoryId === 'string' ? categoryId : undefined,
+        page,
+        size
+      )
+    );
 }

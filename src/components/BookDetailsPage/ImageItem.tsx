@@ -9,8 +9,8 @@ const ImageItem = () => {
     <div className="aspect-[2/3] overflow-hidden relative w-full rounded-lg">
       <Image
         className="rounded-md"
-        layout="fill"
-        objectFit="contain"
+        fill
+        style={{ objectFit: 'contain' }}
         src={selectedBook?.cover_url ?? '/'}
         alt="Booku"
       />

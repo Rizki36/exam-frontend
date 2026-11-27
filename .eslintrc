@@ -1,4 +1,5 @@
 {
+    "settings": { "next": { "rootDir": "." } },
     // Configuration for JavaScript files
     "extends": [
         "airbnb-base",
@@ -11,6 +12,7 @@
             "error",
             {
                 "singleQuote": true,
+                "trailingComma": "es5",
                 "endOfLine": "auto"
             }
         ],
@@ -20,7 +22,8 @@
         "cypress/assertion-before-screenshot": "warn",
         "cypress/no-force": "warn",
         "cypress/no-async-tests": "error",
-        "cypress/no-pause": "error"
+        "cypress/no-pause": "error",
+        "cypress/unsafe-to-chain-command": "off"
     },
     "overrides": [
         // Configuration for TypeScript files
@@ -42,6 +45,7 @@
                     "error",
                     {
                         "singleQuote": true,
+                "trailingComma": "es5",
                         "endOfLine": "auto"
                     }
                 ],
