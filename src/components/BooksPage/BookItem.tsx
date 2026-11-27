@@ -40,7 +40,7 @@ const BookItem: FC<{ books: BookType[] }> = ({ books }) => {
   if (!bookFiltered.length) return <EmptyItem />;
 
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence mode="wait">
       <motion.div
         key={selectedCategory?.id ? selectedCategory.id : 'null'}
         animate={{ opacity: 1, y: 0 }}

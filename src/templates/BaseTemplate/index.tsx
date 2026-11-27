@@ -1,9 +1,9 @@
-import { FC } from 'react';
+import { FC, PropsWithChildren } from 'react';
 
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 
-const BaseTemplate: FC = ({ children }) => {
+const BaseTemplate: FC<PropsWithChildren> = ({ children }) => {
   return (
     <div className="flex flex-col h-screen lg:flex-row">
       <Sidebar className="hidden lg:flex" />

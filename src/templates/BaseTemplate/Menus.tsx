@@ -7,11 +7,9 @@ const Menus: FC<{ className?: string }> = ({ className }) => {
   return (
     <ul className={`p-2 menu bg-base-100 rounded-box ${className}`}>
       <li>
-        <Link href={'/books'}>
-          <a className="active">
-            <BookOpenIcon className="w-6 h-6" />
-            Books
-          </a>
+        <Link href={'/books'} className="active">
+          <BookOpenIcon className="w-6 h-6" />
+          Books
         </Link>
       </li>
       {/* <li>

@@ -33,8 +33,8 @@ const ImageItem: FC<
     >
       <Image
         className="rounded-md"
-        layout="fill"
-        objectFit="contain"
+        fill
+        style={{ objectFit: 'contain' }}
         src={book.cover_url}
         alt="Booku"
       />
